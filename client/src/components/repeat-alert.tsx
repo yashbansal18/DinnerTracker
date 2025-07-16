@@ -18,7 +18,7 @@ export default function RepeatAlert() {
 
   const { data: repeatAlerts } = useQuery({
     queryKey: ['/api/repeat-dish-alerts'],
-    enabled: isAuthenticated && guests && dishes,
+    enabled: Boolean(isAuthenticated && guests && dishes),
     queryFn: async () => {
       if (!guests || !dishes) return [];
       
@@ -26,8 +26,8 @@ export default function RepeatAlert() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          guestIds: guests.map(g => g.id),
-          dishIds: dishes.map(d => d.id),
+          guestIds: guests.map((g: any) => g.id),
+          dishIds: dishes.map((d: any) => d.id),
         }),
         credentials: 'include',
       });
