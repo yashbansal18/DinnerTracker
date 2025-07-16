@@ -1,6 +1,8 @@
 # Second Helpings
 
-A mobile-first web application for dinner hosts to manage events, track guests, dishes, and meal history. The primary goal is to help users avoid repeating the same dishes for the same guests by providing smart alerts and comprehensive tracking.
+A mobile-responsive **React.js web application** for dinner hosts to manage events, track guests, dishes, and meal history. Built with modern web technologies and optimized for mobile devices, it helps users avoid repeating the same dishes for the same guests by providing smart alerts and comprehensive tracking.
+
+**Note: This is a web application (React.js), not a native mobile app (React Native). It runs in web browsers and is designed with a mobile-first approach for optimal mobile experience.**
 
 ## Features
 
@@ -20,7 +22,7 @@ A mobile-first web application for dinner hosts to manage events, track guests, 
 
 ## Tech Stack
 
-### Frontend
+### Frontend (React.js Web Application)
 - **React 18** with TypeScript
 - **Vite** for development and build
 - **Tailwind CSS** for styling
@@ -28,6 +30,7 @@ A mobile-first web application for dinner hosts to manage events, track guests, 
 - **TanStack Query** for server state management
 - **Wouter** for client-side routing
 - **React Hook Form** with Zod validation
+- **Mobile-responsive design** optimized for web browsers
 
 ### Backend
 - **Node.js** with Express.js
